@@ -1,3 +1,1 @@
-Labb System 25 Dag 2
-
-![CI](https://github.com/<användarnamn>/<repo>/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/TheSwedishViking/LaborationGithubActions/actions/workflows/ci.yml/badge.svg)](https://github.com/TheSwedishViking/LaborationGithubActions/actions/workflows/ci.yml)
