@@ -38,7 +38,7 @@ namespace _1901
             int totalFuelWeight = 0;
             
 
-            while(currentFuelWeight > 2)
+            while(currentFuelWeight = 4)
             {
                 int currentFuelRequirment = GetRequiredFuel(currentFuelWeight);
                 if(currentFuelRequirment == 0)
