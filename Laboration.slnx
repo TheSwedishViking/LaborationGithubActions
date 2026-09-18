@@ -1,0 +1,18 @@
+<Solution>
+  <Project Path="1510.Tests/1510.Tests.csproj" Id="22dba009-1324-4578-8a33-d6c82e061926" />
+  <Project Path="1510/1510.csproj" Id="97767122-4cc0-4f49-b36c-35970f3358f3" />
+  <Project Path="1901.Tests/1901.Tests.csproj" Id="9a4b4584-6ce2-47ef-bcd2-8d43e29b41ab" />
+  <Project Path="1901/1901.csproj" Id="5037a891-14b4-4696-bc3b-1055f75e1a38" />
+  <Project Path="2002.Tests/2002.Tests.csproj" Id="5ffd75ce-cba1-46b0-a650-fa5db639b5ba" />
+  <Project Path="2002/2002.csproj" Id="9602bb16-26ee-4226-ae86-8277442ea772" />
+  <Project Path="2102.Tests/2102.Tests.csproj" Id="87b03103-fe45-45c9-8922-073ef90c8967" />
+  <Project Path="2102/2102.csproj" Id="905962cf-a8b4-44a0-9b47-850179e442ea" />
+  <Project Path="2202.Tests/2202.Tests.csproj" Id="b61dd989-2107-4415-85af-c25f0b5ec769" />
+  <Project Path="2202/2202.csproj" Id="6e18c214-e488-4182-addc-40d9057f99ac" />
+  <Project Path="Common.Tests/Common.Tests.csproj" />
+  <Project Path="Common/Common.csproj" />
+  <Project Path="Y2015D01.Tests/Y2015D01.Tests.csproj" Id="95e00f63-cbb2-450a-8b76-a80e7ca75c9c" />
+  <Project Path="Y2015D01/Y2015D01.csproj" Id="562eac9a-3ef7-494b-8f51-7f8948ae9097" />
+  <Project Path="Y2021D01.Tests/Y2021D01.Tests.csproj" />
+  <Project Path="Y2021D01/Y2021D01.csproj" />
+</Solution>
