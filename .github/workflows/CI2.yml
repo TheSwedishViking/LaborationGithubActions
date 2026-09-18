@@ -1,5 +1,19 @@
 name: 'CI2'
-on: pull_request
+on:
+  pull_request: 
+    branches:
+    - del2Branch/Robin
+jobs:
+  SomethingToTestInTheFuture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Step!
+        run: | 
+          echo "This is an inital step co programmed with Oscar :)"
+  
+    
+      
+    
 
 
   
