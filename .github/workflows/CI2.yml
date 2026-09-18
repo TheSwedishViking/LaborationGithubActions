@@ -1,8 +1,6 @@
 name: 'CI2'
-on:
-  pull_request: 
-    branches:
-    - main
+on: 
+  [pull_request  , push, workflow_dispatch]
 env: 
   BUILD_CONFIGURATION : Release
   
@@ -34,11 +32,14 @@ jobs:
          STARTAD_AV: ${{github.actor}}
          GREN : ${{github.base_ref}}
          HANDELSE: ${{github.event_name}}
+         REF_NAME: ${{github.ref_name}}
        run: |
-          echo "Startad av $STARTAD_AV — händelse: $HANDELSE — gren: $GREN"
+          echo "Startad av $STARTAD_AV — händelse: $HANDELSE"
+          echo " gren: $GREN - enkel         svår! grenREF $REF_NAME"
           # TODO: skriv samma rad till sammanfattningen också.
           # Allt som skrivs till filen $GITHUB_STEP_SUMMARY dyker upp som
           # markdown överst på körningens sida.
+          
   
     
       
