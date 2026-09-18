@@ -54,7 +54,7 @@ namespace _1901
 
                 
             }
-            Console.WriteLine("Total grand weight of all fuel requirment is: " + totalFuelWeight);
+            Console.WriteLine("Total weight of all fuel requirment is: " + totalFuelWeight);
 
             return totalFuelWeight;
         }
