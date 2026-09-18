@@ -1,7 +1,6 @@
 name: 'CI'
 on: 
   [workflow_dispatch,push, pull_request]
-  
 
 jobs:
   FirstJob: 
@@ -10,15 +9,14 @@ jobs:
       net_version: '10.0.x'
     steps:
     -  name: Checkout Repo 
-    -  uses: action/checkout@v7
+       uses: action/checkout@v7
 
     -  name: Restoring, building and testing! 😭
-      
-    -  uses: action/setup-dotnet@v6
+       uses: action/setup-dotnet@v6
        with:
-         dotnet-version: ${{net_version}}
-       run: |
-         echo "Starting installation of ${{net_version}}"
+         dotnet-version: $net_version
+    -  run: |
+         echo "Starting installation of $net_version"
          echo "Starting restore!"
          dotnet restore
          echo "Starting build!"
