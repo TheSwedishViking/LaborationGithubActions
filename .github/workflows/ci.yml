@@ -14,7 +14,7 @@ jobs:
      - name: Restoring, building and testing! 😭
        uses: actions/setup-dotnet@v6
        with:
-         dotnet-version: $net_version
+         dotnet-version: ${{env.net_version}}
      - name: Running tests
        run: |
          echo "Starting installation of $net_version"
