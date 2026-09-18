@@ -33,7 +33,7 @@ jobs:
        env:
          STARTAD_AV: ${{github.actor}}
          GREN : ${{github.base_ref}}
-         HANDELSE: ${{github.event}}
+         HANDELSE: ${{github.event_name}}
        run: |
           echo "Startad av $STARTAD_AV — händelse: $HANDELSE — gren: $GREN"
           # TODO: skriv samma rad till sammanfattningen också.
