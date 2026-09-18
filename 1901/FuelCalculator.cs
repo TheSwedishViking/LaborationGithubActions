@@ -38,7 +38,7 @@ namespace _1901
             int totalFuelWeight = 0;
             
 
-            while(currentFuelWeight = 4)
+            while(currentFuelWeight > 2)
             {
                 int currentFuelRequirment = GetRequiredFuel(currentFuelWeight);
                 if(currentFuelRequirment == 0)
@@ -49,7 +49,7 @@ namespace _1901
                 {
                     currentFuelWeight = currentFuelRequirment;
                     totalFuelWeight += currentFuelRequirment;
-                    Console.WriteLine("Weight: " + currentFuelWeight+ " in Kg");
+                    Console.WriteLine("Weight: " + currentFuelWeight);
                 }
 
                 
