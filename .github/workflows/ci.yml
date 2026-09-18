@@ -9,10 +9,10 @@ jobs:
       net_version: '10.0.x'
     steps:
      - name: Checkout Repo 
-       uses: action/LaborationGithubActions/checkout@v7
+       uses: actions/checkout@v7
 
      - name: Restoring, building and testing! 😭
-       uses: action/setup-dotnet@v6
+       uses: actions/setup-dotnet@v6
        with:
          dotnet-version: $net_version
      - name: Running tests
