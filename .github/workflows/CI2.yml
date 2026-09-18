@@ -34,7 +34,11 @@ jobs:
          HANDELSE: ${{github.event_name}}
          REF_NAME: ${{github.ref_name}}
        run: |
-          echo "Startad av $STARTAD_AV — händelse: $HANDELSE"
+          echo "Debug info för build"
+          echo "Startad av (username): $STARTAD_AV"
+          echo "Händelse: $HANDELSE"
+          echo "Gren/'Branch'$GREN: "
+          echo "REF_NAME variabel: $REF_NAME"
           echo " gren: $GREN - enkel         svår! grenREF $REF_NAME"
           # TODO: skriv samma rad till sammanfattningen också.
           # Allt som skrivs till filen $GITHUB_STEP_SUMMARY dyker upp som
