@@ -49,12 +49,12 @@ namespace _1901
                 {
                     currentFuelWeight = currentFuelRequirment;
                     totalFuelWeight += currentFuelRequirment;
-                    Console.WriteLine("Weight: " + currentFuelWeight+ " in Kg");
+                    Console.WriteLine("Weight: " + currentFuelWeight);
                 }
 
                 
             }
-            Console.WriteLine("Total grand weight of all fuel requirment is: " + totalFuelWeight);
+            Console.WriteLine("Total weight of all fuel requirment is: " + totalFuelWeight);
 
             return totalFuelWeight;
         }
