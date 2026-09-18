@@ -49,7 +49,7 @@ namespace _1901
                 {
                     currentFuelWeight = currentFuelRequirment;
                     totalFuelWeight += currentFuelRequirment;
-                    Console.WriteLine("Weight: " + currentFuelWeight);
+                    Console.WriteLine("Weight: " + currentFuelWeight+ " in Kg");
                 }
 
                 
