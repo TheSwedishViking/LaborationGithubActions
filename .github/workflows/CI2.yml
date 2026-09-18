@@ -2,7 +2,7 @@ name: 'CI2'
 on:
   pull_request: 
     branches:
-    - del2Branch/Robin
+    - main
 env: 
   BUILD_CONFIGURATION : Release
   
