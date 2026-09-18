@@ -3,13 +3,42 @@ on:
   pull_request: 
     branches:
     - del2Branch/Robin
+env: 
+  BUILD_CONFIGURATION : Release
+  
+
 jobs:
-  SomethingToTestInTheFuture:
+ FirstJob: 
     runs-on: ubuntu-latest
+    env:
+      net_version: '10.0.x'
     steps:
-      - name: Test Step!
-        run: | 
-          echo "This is an inital step co programmed with Oscar :)"
+     - name: Checkout Repo 
+       uses: actions/checkout@v7
+
+     - name: Restoring, building and testing! 😭
+       uses: actions/setup-dotnet@v6
+       with:
+         dotnet-version: ${{env.net_version}}
+     - name: Running tests
+       run: |
+         echo "Starting installation of $net_version"
+         echo "Starting restore!"
+         dotnet restore
+         echo "Starting build!"
+         dotnet build --no-restore --configuration $BUILD_CONFIGURATION
+         echo "Trying tests!"
+         dotnet test --no-build --configuration $BUILD_CONFIGURATION
+     - name: Vem startade det här?
+       env:
+         STARTAD_AV: ${{github.actor}}
+         GREN : ${{github.base_ref}}
+         HANDELSE: ${{github.event}}
+       run: |
+          echo "Startad av $STARTAD_AV — händelse: $HANDELSE — gren: $GREN"
+          # TODO: skriv samma rad till sammanfattningen också.
+          # Allt som skrivs till filen $GITHUB_STEP_SUMMARY dyker upp som
+          # markdown överst på körningens sida.
   
     
       
