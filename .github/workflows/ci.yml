@@ -3,19 +3,20 @@ on:
   [workflow_dispatch,push, pull_request]
 
 jobs:
-  FirstJob: 
+ FirstJob: 
     runs-on: ubuntu-latest
     env:
       net_version: '10.0.x'
     steps:
-    -  name: Checkout Repo 
+     - name: Checkout Repo 
        uses: action/checkout@v7
 
-    -  name: Restoring, building and testing! 😭
+     - name: Restoring, building and testing! 😭
        uses: action/setup-dotnet@v6
        with:
          dotnet-version: $net_version
-    -  run: |
+     - name: Running tests
+       run: |
          echo "Starting installation of $net_version"
          echo "Starting restore!"
          dotnet restore
